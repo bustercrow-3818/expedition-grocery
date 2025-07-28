@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cgrc7100ykn64"]
+
+[ext_resource type="Script" uid="uid://dn3q7wic45ts" path="res://scenes/system/main/main.gd" id="1_ma3u8"]
+[ext_resource type="PackedScene" uid="uid://bw88w7sbips7g" path="res://scenes/entities/player/player.tscn" id="2_ngr27"]
+[ext_resource type="PackedScene" uid="uid://btmyiipivsode" path="res://scenes/objects/test_block/test_block.tscn" id="3_eku2k"]
+[ext_resource type="PackedScene" uid="uid://cxu686eyfbwpf" path="res://scenes/locales/stores/store_a.tscn" id="4_eku2k"]
+
+[node name="main" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_ma3u8")
+
+[node name="player" parent="." instance=ExtResource("2_ngr27")]
+
+[node name="test_block" parent="." instance=ExtResource("3_eku2k")]
+position = Vector2(40, 18)
+
+[node name="TileMapLayer" parent="." instance=ExtResource("4_eku2k")]
+position = Vector2(-243, -140)

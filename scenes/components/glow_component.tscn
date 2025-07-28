@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://drnvlw4m4cn67"]
+
+[ext_resource type="Script" uid="uid://xnoo732enbta" path="res://scenes/components/glow_component.gd" id="1_1tjuy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1tjuy"]
+radius = 40.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nr1bs"]
+radius = 16.0
+
+[node name="glow_component" type="Node2D" node_paths=PackedStringArray("player_det", "mouse_det")]
+script = ExtResource("1_1tjuy")
+player_det = NodePath("player_det")
+mouse_det = NodePath("mouse_det")
+
+[node name="player_det" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_det"]
+shape = SubResource("CircleShape2D_1tjuy")
+
+[node name="mouse_det" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mouse_det"]
+shape = SubResource("CircleShape2D_nr1bs")

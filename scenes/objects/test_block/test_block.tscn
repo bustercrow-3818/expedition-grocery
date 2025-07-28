@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://btmyiipivsode"]
+
+[ext_resource type="Texture2D" uid="uid://djiffau1qufru" path="res://icon.svg" id="1_grmpx"]
+[ext_resource type="PackedScene" uid="uid://drnvlw4m4cn67" path="res://scenes/components/glow_component.tscn" id="3_7dej6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_grmpx"]
+size = Vector2(32, 32)
+
+[node name="test_block" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_grmpx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_grmpx")
+
+[node name="glow_component" parent="." instance=ExtResource("3_7dej6")]
+position = Vector2(0, -16)

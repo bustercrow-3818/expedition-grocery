@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Shelf" load_steps=2 format=3 uid="uid://bao5a2kicoeeq"]
+
+[ext_resource type="Script" uid="uid://c7q7lbn10x5wa" path="res://scripts/classes/shelf.gd" id="1_ve8e7"]
+
+[resource]
+script = ExtResource("1_ve8e7")
+shelf_type = ""
+poss_contents = Array[String]([])
