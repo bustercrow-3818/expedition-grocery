@@ -15,6 +15,10 @@ run/main_scene="uid://cgrc7100ykn64"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+StoreStock="*res://store_stock.gd"
+
 [input]
 
 up={

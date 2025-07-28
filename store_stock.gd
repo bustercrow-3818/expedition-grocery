@@ -7,3 +7,5 @@ var canned = {"Beans": 1, "Tuna": 1, "Fruit": 2}
 var dry = {"Flour": 2, "Sugar": 3, "Rice": 1, "Pasta": 3}
 var bread = {"White Bread": 1, "Whole Wheat": 2, "Specialty Bread": 4}
 var snacks = {"Chips": 2, "Coffee": 4, "Cookies": 5}
+
+enum sections {frozen, produce, fridge, canned, dry, bread, snacks}
