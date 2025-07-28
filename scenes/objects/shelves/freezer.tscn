@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmpyv0tewqv6b"]
+
+[ext_resource type="PackedScene" uid="uid://r44rpbh6iirt" path="res://scenes/locales/stores/tile_map_layer.tscn" id="1_08ij0"]
+[ext_resource type="PackedScene" uid="uid://drnvlw4m4cn67" path="res://scenes/components/glow_component.tscn" id="2_mq8dq"]
+
+[node name="freezer" type="Node2D"]
+
+[node name="TileMapLayer" parent="." instance=ExtResource("1_08ij0")]
+z_index = 1
+position = Vector2(-8, -16)
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 4, 0, 0, 0, 0, 0, 1, 0, 0, 0, 4, 0, 5, 0, 0, 0)
+
+[node name="glow_component" parent="." instance=ExtResource("2_mq8dq")]

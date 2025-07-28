@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="expedition grocery"
+config/name="-OLD- expedition grocery -OLD-"
 run/main_scene="uid://cgrc7100ykn64"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
